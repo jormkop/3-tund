@@ -7,6 +7,9 @@
 	$password_error = "";
 	$ppassword_error = "";
 	$date_error = "";
+	
+	//teen uue muutuja 
+	$name
 	//keegi näppis mu nuppu
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		
@@ -55,6 +58,19 @@
 				}
 		
 		}
+	
+		function test_input($data){
+			//võtab ära tühikud, enterid, tabid
+			$data = trim ($data);
+			//tagurpidi kaldkriipsud
+			$data =stripslashes($data);
+			//		
+			
+		}
+	
+	
+	
+	
 	
 ?>
 <?php $page_title = "Sisselogimise leht";
